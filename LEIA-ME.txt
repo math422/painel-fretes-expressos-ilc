@@ -1,0 +1,12 @@
+Painel de Fretes Expressos - versão online (login e dados no servidor)
+
+Arquivos:
+- index.html ................ o painel
+- netlify/functions/api.mjs . servidor (login, usuários e registros)
+- netlify/lib/core.mjs ...... regras do servidor
+- package.json / netlify.toml configuração do Netlify
+
+Variável obrigatória no Netlify (Project configuration > Environment variables):
+- ILC_ADMIN_PASSWORD = senha do primeiro acesso do administrador
+  (vale só enquanto não houver usuários no servidor; login: matheus.fernandes@ilclog.com.br)
+Opcional: ILC_ADMIN_EMAIL para usar outro e-mail no primeiro acesso.
